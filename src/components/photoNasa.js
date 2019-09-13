@@ -5,6 +5,7 @@ import Title from "./title";
 import Explanation from "./explanation";
 import Copyright from "./copyright";
 
+
 export default function PhotoNasa () {
 
     const[info, setInfo] = useState([]);
@@ -28,8 +29,8 @@ export default function PhotoNasa () {
                     date={info.date} />
           <PhotoContainer 
                 imgUrl={info.url}/>
-            <Explanation explanation={info.explanation}/>
             <Copyright copyright={info.copyright}/>
+            <Explanation explanation={info.explanation}/>
         </div>
     );
 }
